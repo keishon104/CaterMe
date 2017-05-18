@@ -6,4 +6,16 @@
 //  Copyright © 2017 CaterMe. All rights reserved.
 //
 
+
 import Foundation
+import UIKit
+
+class PostItem {
+    var image: UIImage
+    var text: String
+    
+    init(image: UIImage, text: String) {
+        self.image = image
+        self.text = text
+    }
+}
