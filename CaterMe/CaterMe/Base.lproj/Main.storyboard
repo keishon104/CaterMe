@@ -210,25 +210,37 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vwj-i3-0In">
                                 <rect key="frame" x="26" y="94" width="323" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-ju-DFm">
-                                        <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-ju-DFm">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JUM-Ck-NpV">
-                                        <rect key="frame" x="62" y="0.0" width="261" height="30"/>
+                                        <rect key="frame" x="83" y="0.0" width="240" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kG-n1-rcd">
+                                <rect key="frame" x="146" y="502" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="TPW-ql-1ny"/>
+                                </constraints>
+                                <state key="normal" title="chekout"/>
+                                <connections>
+                                    <segue destination="2EW-kI-LhQ" kind="show" id="sFV-RL-OYj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Inc-TE-yYi" firstAttribute="top" secondItem="4kG-n1-rcd" secondAttribute="bottom" constant="135" id="1de-NZ-cTg"/>
                             <constraint firstItem="Vwj-i3-0In" firstAttribute="leading" secondItem="zXV-Rn-GRl" secondAttribute="leadingMargin" constant="10" id="B56-tk-VXk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vwj-i3-0In" secondAttribute="trailing" constant="10" id="K1v-bz-R8A"/>
+                            <constraint firstItem="4kG-n1-rcd" firstAttribute="centerX" secondItem="Vwj-i3-0In" secondAttribute="centerX" id="Ri5-Ld-25R"/>
                             <constraint firstItem="Vwj-i3-0In" firstAttribute="top" secondItem="hfh-Mx-Sh0" secondAttribute="bottom" constant="30" id="n4R-yO-5aq"/>
                         </constraints>
                     </view>
@@ -236,6 +248,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lb8-vY-Rlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4552.8000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--Check Out View Controller-->
+        <scene sceneID="XXt-JT-cqg">
+            <objects>
+                <viewController id="2EW-kI-LhQ" customClass="CheckOutViewController" customModule="CaterMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kYB-jz-Twt"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZT-3H-c1w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="57H-Bf-DJw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdc-VS-G5T">
+                                <rect key="frame" x="45" y="118" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Xdc-VS-G5T" id="OxF-j9-Kgv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdv-Ph-ZxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5437.6000000000004" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vpV-Lu-jmb">

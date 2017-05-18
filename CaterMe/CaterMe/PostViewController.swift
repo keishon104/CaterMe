@@ -43,6 +43,7 @@ class PostViewController: UITableViewController {
         
         return cell
     }
+    sege
 }
 
 
