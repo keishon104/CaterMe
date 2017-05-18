@@ -20,6 +20,9 @@ class PostViewController: UITableViewController {
     
         postItems.append(item1)
         postItems.append(item2)
+        
+//        tableView.rowHeight = 250
+        tableView.estimatedRowHeight = 250
 
     }
     
