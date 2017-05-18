@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JmR-5L-M1b">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="wb4-9j-6FO" customClass="PostCell" customModule="CaterMe" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="208" id="wb4-9j-6FO" customClass="PostCell" customModule="CaterMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="208"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wb4-9j-6FO" id="QCO-W0-PUl">
@@ -52,6 +52,7 @@
                                     <outlet property="imageView" destination="SvG-a3-xJa" id="zhr-TQ-NdW"/>
                                     <outlet property="postImage" destination="SvG-a3-xJa" id="PJS-Du-JNM"/>
                                     <outlet property="postTextLabel" destination="Pjr-Ia-1aV" id="FeL-sh-HE3"/>
+                                    <segue destination="WmV-5P-pxd" kind="show" id="YSM-QW-WcX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,6 +66,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xh-Kh-csC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2000.8" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wib-t0-TpH">
+            <objects>
+                <viewController id="WmV-5P-pxd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ltx-wB-nv9"/>
+                        <viewControllerLayoutGuide type="bottom" id="KSN-Kz-z11"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gfs-ZM-R8g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7p-Ru-n8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2906" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vpV-Lu-jmb">

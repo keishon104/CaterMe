@@ -15,9 +15,16 @@ class PostViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let item1 = PostItem(image: UIImage(named: "")!, text: "example")
-        let item2 = PostItem(image: UIImage(named: "")!, text: "example2")
+        let item1 = PostItem(image: UIImage(named: "PostSouthernFood")!, text: "example")
+        let item2 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "example2")
+    
+        postItems.append(item1)
+        postItems.append(item2)
+
     }
+    
+    
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return postItems.count

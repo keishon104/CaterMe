@@ -14,6 +14,7 @@
 		1866E91B1ECD43DB00526187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1866E9191ECD43DB00526187 /* LaunchScreen.storyboard */; };
 		1866E9231ECD4B6B00526187 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9221ECD4B6B00526187 /* PostCell.swift */; };
 		1866E9251ECD4D9300526187 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9241ECD4D9300526187 /* PostItem.swift */; };
+		1866E9271ECDF47700526187 /* SouthernFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9261ECDF47700526187 /* SouthernFoodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1866E91C1ECD43DB00526187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1866E9221ECD4B6B00526187 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		1866E9241ECD4D9300526187 /* PostItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		1866E9261ECDF47700526187 /* SouthernFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SouthernFoodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1866E91C1ECD43DB00526187 /* Info.plist */,
 				1866E9221ECD4B6B00526187 /* PostCell.swift */,
 				1866E9241ECD4D9300526187 /* PostItem.swift */,
+				1866E9261ECDF47700526187 /* SouthernFoodViewController.swift */,
 			);
 			path = CaterMe;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				1866E9131ECD43DB00526187 /* PostViewController.swift in Sources */,
 				1866E9111ECD43DB00526187 /* AppDelegate.swift in Sources */,
 				1866E9251ECD4D9300526187 /* PostItem.swift in Sources */,
+				1866E9271ECDF47700526187 /* SouthernFoodViewController.swift in Sources */,
 				1866E9231ECD4B6B00526187 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
