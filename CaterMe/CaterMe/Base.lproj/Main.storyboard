@@ -446,7 +446,7 @@
             </objects>
             <point key="canvasLocation" x="4552.8000000000002" y="132.68365817091455"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Title-->
         <scene sceneID="uSL-G7-QoA">
             <objects>
                 <viewController id="TMF-fH-yKx" customClass="MapViewController" customModule="CaterMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -458,14 +458,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6n-fN-a6X">
-                                <rect key="frame" x="313" y="20" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="2EW-kI-LhQ" kind="show" id="FhK-8P-kUr"/>
-                                </connections>
-                            </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TUH-8n-d6T">
                                 <rect key="frame" x="0.0" y="108" width="375" height="515"/>
                             </mapView>
@@ -486,6 +478,13 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="WsS-ng-OOg">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="W3e-w0-nD0">
+                            <connections>
+                                <segue destination="2EW-kI-LhQ" kind="show" id="OXt-er-AhT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="TUH-8n-d6T" id="0bv-Rs-oME"/>
@@ -509,16 +508,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zrs-VV-bBS">
-                                <rect key="frame" x="42" y="117" width="63" height="21"/>
+                                <rect key="frame" x="42" y="117" width="63" height="20.5"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdc-VS-G5T">
-                                <rect key="frame" x="156" y="117" width="63" height="21"/>
+                                <rect key="frame" x="156" y="117" width="63" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83L-mz-7UY">
-                                <rect key="frame" x="152" y="557" width="70" height="30"/>
+                                <rect key="frame" x="152" y="513" width="70" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="A03-lE-eyG"/>
                                 </constraints>
@@ -528,11 +527,23 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcv-Nq-oC4">
-                                <rect key="frame" x="42" y="117" width="105" height="21"/>
+                                <rect key="frame" x="42" y="117" width="105" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="91c-Ch-IKL">
+                                <rect key="frame" x="-53" y="377" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGZ-b2-Veb">
+                                <rect key="frame" x="187" y="377" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-VR-rvG">
+                                <rect key="frame" x="-53" y="377" width="480" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -612,6 +623,6 @@
         <image name="PostSouthernFood" width="3031" height="2274"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FhK-8P-kUr"/>
+        <segue reference="sFV-RL-OYj"/>
     </inferredMetricsTieBreakers>
 </document>
