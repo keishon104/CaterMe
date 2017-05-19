@@ -19,6 +19,7 @@
 		1866E92D1ECED3C400526187 /* SearchFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */; };
 		1866E92F1ECEF20C00526187 /* FilteredPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */; };
 		1872EAB11ECF02280000C517 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EAB01ECF02270000C517 /* MapViewController.swift */; };
+		1872EAB51ECF767C0000C517 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1872EAB41ECF767C0000C517 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFilterViewController.swift; sourceTree = "<group>"; };
 		1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredPostViewController.swift; sourceTree = "<group>"; };
 		1872EAB01ECF02270000C517 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1872EAB41ECF767C0000C517 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CaterMe/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		1866E9041ECD43DB00526187 = {
 			isa = PBXGroup;
 			children = (
+				1872EAB41ECF767C0000C517 /* Assets.xcassets */,
 				1866E90F1ECD43DB00526187 /* CaterMe */,
 				1866E90E1ECD43DB00526187 /* Products */,
 			);
@@ -117,8 +120,7 @@
 				TargetAttributes = {
 					1866E90C1ECD43DB00526187 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = GJGX5U53PF;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -146,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1866E91B1ECD43DB00526187 /* LaunchScreen.storyboard in Resources */,
+				1872EAB51ECF767C0000C517 /* Assets.xcassets in Resources */,
 				1866E9161ECD43DB00526187 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GJGX5U53PF;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CaterMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.caterme.CaterMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -302,11 +307,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GJGX5U53PF;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CaterMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.caterme.CaterMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

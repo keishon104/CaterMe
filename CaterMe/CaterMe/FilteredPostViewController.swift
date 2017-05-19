@@ -16,18 +16,16 @@ class FilteredPostViewController: UITableViewController {
         super.viewDidLoad()
         
         let item1 = PostItem(image: UIImage(named: "PostSouthernFood")!, text: "Durham Catering Company")
-        let item2 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Nosh")
-        let item3 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Sage and Swift")
-        let item4 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Pomegranite Kitchen")
-        let item5 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Catering by George")
-        let item6 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Lena's Lunchbox")
+        let item2 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Piper's in the Popper")
+        let item3 = PostItem(image: UIImage(named: "nantucketGrill")!, text: "Nantucket Grill")
+        let item4 = PostItem(image: UIImage(named: "NoshFood")!, text: "Nosh")
+
         
         postItems.append(item1)
         postItems.append(item2)
         postItems.append(item3)
         postItems.append(item4)
-        postItems.append(item5)
-        postItems.append(item6)
+    
         
         
         //        tableView.rowHeight = 250

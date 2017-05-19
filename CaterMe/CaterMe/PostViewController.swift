@@ -14,13 +14,14 @@ class PostViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       // self.view.backgroundColor = UIColor.green
         
         let item1 = PostItem(image: UIImage(named: "PostSouthernFood")!, text: "Durham Catering Company")
-        let item2 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Nosh")
-        let item3 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Sage and Swift")
-        let item4 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Pomegranite Kitchen")
+        let item2 = PostItem(image: UIImage(named: "NoshFood")!, text: "Nosh")
+        let item3 = PostItem(image: UIImage(named: "SwiftAndSage")!, text: "Sage and Swift")
+        let item4 = PostItem(image: UIImage(named: "logo")!, text: "Pomegranite Kitchen")
         let item5 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Catering by George")
-        let item6 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Lena's Lunchbox")
+        let item6 = PostItem(image: UIImage(named: "caketake1")!, text: "Lena's Lunchbox")
     
         postItems.append(item1)
         postItems.append(item2)
@@ -52,6 +53,7 @@ class PostViewController: UITableViewController {
         
         return cell
     }
+    
     
     
     
