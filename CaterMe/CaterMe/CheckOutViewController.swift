@@ -19,7 +19,6 @@ class CheckOutViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        label.text = addressString
     }
 
     override func didReceiveMemoryWarning() {
