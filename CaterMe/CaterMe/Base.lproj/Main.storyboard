@@ -142,42 +142,40 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="208" id="x0J-dR-Iot" customClass="PostCell" customModule="CaterMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="208"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="240" id="iAg-NA-E37" customClass="PostCell" customModule="CaterMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x0J-dR-Iot" id="egP-Rl-Zef">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iAg-NA-E37" id="f29-uX-8MP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UNf-H6-oAa">
-                                            <rect key="frame" x="8" y="8" width="359" height="191"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="PostSouthernFood" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-42-19U">
-                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="150" id="KvE-vG-22g"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dd-iW-0cw">
-                                                    <rect key="frame" x="0.0" y="150" width="359" height="41"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-ax-Vcs">
+                                            <rect key="frame" x="8" y="8" width="359" height="201"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="201" id="WSP-V5-h8N"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUQ-6I-QKM">
+                                            <rect key="frame" x="8" y="211" width="359" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="UNf-H6-oAa" secondAttribute="trailing" id="Aqj-bR-aRZ"/>
-                                        <constraint firstItem="UNf-H6-oAa" firstAttribute="top" secondItem="egP-Rl-Zef" secondAttribute="topMargin" id="Ln4-pW-jEW"/>
-                                        <constraint firstItem="UNf-H6-oAa" firstAttribute="leading" secondItem="egP-Rl-Zef" secondAttribute="leadingMargin" id="OOu-eQ-KYC"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="UNf-H6-oAa" secondAttribute="bottom" id="cZs-Ft-bo5"/>
+                                        <constraint firstItem="yUQ-6I-QKM" firstAttribute="bottom" secondItem="f29-uX-8MP" secondAttribute="bottomMargin" id="6AB-rZ-bPD"/>
+                                        <constraint firstItem="gRD-ax-Vcs" firstAttribute="leading" secondItem="yUQ-6I-QKM" secondAttribute="leading" id="9oR-le-Uue"/>
+                                        <constraint firstItem="yUQ-6I-QKM" firstAttribute="leading" secondItem="f29-uX-8MP" secondAttribute="leadingMargin" id="Qfe-CU-Dh4"/>
+                                        <constraint firstItem="gRD-ax-Vcs" firstAttribute="trailing" secondItem="yUQ-6I-QKM" secondAttribute="trailing" id="YL6-if-QGK"/>
+                                        <constraint firstItem="yUQ-6I-QKM" firstAttribute="trailing" secondItem="f29-uX-8MP" secondAttribute="trailingMargin" id="r8A-XM-NnA"/>
+                                        <constraint firstItem="gRD-ax-Vcs" firstAttribute="top" secondItem="f29-uX-8MP" secondAttribute="topMargin" id="vs0-Ld-shI"/>
+                                        <constraint firstItem="yUQ-6I-QKM" firstAttribute="top" secondItem="gRD-ax-Vcs" secondAttribute="bottom" constant="2" id="yaS-0f-h3X"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageView" destination="XdE-42-19U" id="kzt-O2-b1A"/>
-                                    <outlet property="postImage" destination="XdE-42-19U" id="2YU-mB-Euo"/>
-                                    <outlet property="postTextLabel" destination="5dd-iW-0cw" id="SE6-uz-tzP"/>
+                                    <outlet property="postImage" destination="gRD-ax-Vcs" id="anz-1n-XST"/>
+                                    <outlet property="postTextLabel" destination="yUQ-6I-QKM" id="lGK-QW-2Yb"/>
+                                    <segue destination="WmV-5P-pxd" kind="show" id="6WJ-UY-Ps8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -207,41 +205,35 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="208" id="wb4-9j-6FO" customClass="PostCell" customModule="CaterMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="208"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="240" id="wb4-9j-6FO" customClass="PostCell" customModule="CaterMe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wb4-9j-6FO" id="QCO-W0-PUl">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r6e-f1-tSz">
-                                            <rect key="frame" x="8" y="8" width="359" height="191"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="PostSouthernFood" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-a3-xJa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="150" id="ZK8-9d-0KV"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-Ia-1aV">
-                                                    <rect key="frame" x="0.0" y="150" width="359" height="41"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H5D-O3-cIY">
+                                            <rect key="frame" x="8" y="8" width="359" height="200.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-Ia-1aV">
+                                            <rect key="frame" x="8" y="210.5" width="359" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="r6e-f1-tSz" secondAttribute="bottom" id="9Vb-Hu-yy7"/>
-                                        <constraint firstItem="r6e-f1-tSz" firstAttribute="leading" secondItem="QCO-W0-PUl" secondAttribute="leadingMargin" id="GrW-gs-R2m"/>
-                                        <constraint firstItem="r6e-f1-tSz" firstAttribute="top" secondItem="QCO-W0-PUl" secondAttribute="topMargin" id="Q5U-Lw-kvq"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="r6e-f1-tSz" secondAttribute="trailing" id="hdP-LI-37P"/>
+                                        <constraint firstItem="H5D-O3-cIY" firstAttribute="trailing" secondItem="QCO-W0-PUl" secondAttribute="trailingMargin" id="34E-vc-xfY"/>
+                                        <constraint firstItem="Pjr-Ia-1aV" firstAttribute="trailing" secondItem="QCO-W0-PUl" secondAttribute="trailingMargin" id="Xbn-Ex-ahi"/>
+                                        <constraint firstItem="H5D-O3-cIY" firstAttribute="top" secondItem="QCO-W0-PUl" secondAttribute="topMargin" id="lYP-8k-U2B"/>
+                                        <constraint firstItem="Pjr-Ia-1aV" firstAttribute="top" secondItem="H5D-O3-cIY" secondAttribute="bottom" constant="2" id="p6B-4U-a4a"/>
+                                        <constraint firstItem="H5D-O3-cIY" firstAttribute="leading" secondItem="QCO-W0-PUl" secondAttribute="leadingMargin" id="qbY-FO-fZ2"/>
+                                        <constraint firstItem="Pjr-Ia-1aV" firstAttribute="leading" secondItem="QCO-W0-PUl" secondAttribute="leadingMargin" id="t48-sj-Rce"/>
+                                        <constraint firstItem="Pjr-Ia-1aV" firstAttribute="bottom" secondItem="QCO-W0-PUl" secondAttribute="bottomMargin" id="yWt-XV-Kar"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageView" destination="SvG-a3-xJa" id="zhr-TQ-NdW"/>
-                                    <outlet property="postImage" destination="SvG-a3-xJa" id="PJS-Du-JNM"/>
+                                    <outlet property="postImage" destination="H5D-O3-cIY" id="lYv-9h-gxY"/>
                                     <outlet property="postTextLabel" destination="Pjr-Ia-1aV" id="FeL-sh-HE3"/>
                                     <segue destination="WmV-5P-pxd" kind="show" id="YSM-QW-WcX"/>
                                 </connections>
@@ -623,6 +615,7 @@
         <image name="PostSouthernFood" width="3031" height="2274"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="6WJ-UY-Ps8"/>
         <segue reference="sFV-RL-OYj"/>
     </inferredMetricsTieBreakers>
 </document>
