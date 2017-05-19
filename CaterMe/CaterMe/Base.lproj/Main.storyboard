@@ -195,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="3749.5999999999999" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Address View Controller-->
         <scene sceneID="RdU-dA-HaG">
             <objects>
-                <viewController id="anc-nj-hGX" sceneMemberID="viewController">
+                <viewController id="anc-nj-hGX" customClass="AddressViewController" customModule="CaterMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hfh-Mx-Sh0"/>
                         <viewControllerLayoutGuide type="bottom" id="Inc-TE-yYi"/>
@@ -244,6 +244,9 @@
                             <constraint firstItem="Vwj-i3-0In" firstAttribute="top" secondItem="hfh-Mx-Sh0" secondAttribute="bottom" constant="30" id="n4R-yO-5aq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="JUM-Ck-NpV" id="z2C-Z8-GcO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lb8-vY-Rlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,15 +264,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdc-VS-G5T">
-                                <rect key="frame" x="45" y="118" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zrs-VV-bBS">
+                                <rect key="frame" x="42" y="117" width="63" height="21"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdc-VS-G5T">
+                                <rect key="frame" x="156" y="117" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83L-mz-7UY">
+                                <rect key="frame" x="152" y="557" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="A03-lE-eyG"/>
+                                </constraints>
+                                <state key="normal" title="Checkout"/>
+                                <connections>
+                                    <segue destination="RjQ-ep-4BR" kind="show" id="Qsv-71-KJ7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="83L-mz-7UY" firstAttribute="centerX" secondItem="Xdc-VS-G5T" secondAttribute="centerX" id="Hge-Mu-sqg"/>
+                            <constraint firstItem="Xdc-VS-G5T" firstAttribute="bottom" secondItem="zrs-VV-bBS" secondAttribute="bottom" id="IXV-3Y-ijZ"/>
+                            <constraint firstItem="Xdc-VS-G5T" firstAttribute="leading" secondItem="zrs-VV-bBS" secondAttribute="trailing" constant="51" id="PsS-aA-YK6"/>
+                            <constraint firstItem="Xdc-VS-G5T" firstAttribute="top" secondItem="zrs-VV-bBS" secondAttribute="top" id="cbH-Tl-7Td"/>
+                            <constraint firstItem="RZT-3H-c1w" firstAttribute="top" secondItem="83L-mz-7UY" secondAttribute="bottom" constant="80" id="fgq-jT-bIH"/>
+                            <constraint firstItem="Xdc-VS-G5T" firstAttribute="centerX" secondItem="57H-Bf-DJw" secondAttribute="centerX" id="neV-Yn-N1E"/>
+                            <constraint firstItem="Xdc-VS-G5T" firstAttribute="top" secondItem="kYB-jz-Twt" secondAttribute="bottom" constant="53" id="xbA-XI-6Ui"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="Xdc-VS-G5T" id="OxF-j9-Kgv"/>
@@ -278,6 +302,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdv-Ph-ZxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5437.6000000000004" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QxD-fy-n8G">
+            <objects>
+                <viewController id="RjQ-ep-4BR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zVx-5S-8Ol"/>
+                        <viewControllerLayoutGuide type="bottom" id="B9i-hv-VXd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vQc-Sn-bGx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5J-pl-lu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6350" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vpV-Lu-jmb">

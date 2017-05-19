@@ -1,5 +1,5 @@
 //
-//  CheckOutViewController.swift
+//  AddressViewController.swift
 //  CaterMe
 //
 //  Created by Apple on 5/18/17.
@@ -8,18 +8,14 @@
 
 import UIKit
 
-class CheckOutViewController: UIViewController {
+class AddressViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
-    
-    var addressString: String = "" // Initiallized string to pass data between view controllers
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        label.text = addressString
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +23,10 @@ class CheckOutViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondVC = segue.destination as! CheckOutViewController
+        secondVC.addressString = textField.text ?? ""
+    }
 
     /*
     // MARK: - Navigation

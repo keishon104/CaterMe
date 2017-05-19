@@ -34,7 +34,7 @@ class PostViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as! PostCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as! PostCell
         
         let currentPost = postItems[indexPath.row]
         
@@ -43,7 +43,7 @@ class PostViewController: UITableViewController {
         
         return cell
     }
-    sege
+    
 }
 
 
