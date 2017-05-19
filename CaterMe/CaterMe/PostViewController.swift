@@ -15,11 +15,20 @@ class PostViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let item1 = PostItem(image: UIImage(named: "PostSouthernFood")!, text: "example")
-        let item2 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "example2")
+        let item1 = PostItem(image: UIImage(named: "PostSouthernFood")!, text: "Durham Catering Company")
+        let item2 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Nosh")
+        let item3 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Sage and Swift")
+        let item4 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Pomegranite Kitchen")
+        let item5 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Catering by George")
+        let item6 = PostItem(image: UIImage(named: "PostVegetarianFood")!, text: "Lena's Lunchbox")
     
         postItems.append(item1)
         postItems.append(item2)
+        postItems.append(item3)
+        postItems.append(item4)
+        postItems.append(item5)
+        postItems.append(item6)
+
         
 //        tableView.rowHeight = 250
         tableView.estimatedRowHeight = 250

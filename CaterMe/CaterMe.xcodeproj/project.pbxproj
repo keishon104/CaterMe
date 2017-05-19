@@ -10,13 +10,13 @@
 		1866E9111ECD43DB00526187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9101ECD43DB00526187 /* AppDelegate.swift */; };
 		1866E9131ECD43DB00526187 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9121ECD43DB00526187 /* PostViewController.swift */; };
 		1866E9161ECD43DB00526187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1866E9141ECD43DB00526187 /* Main.storyboard */; };
-		1866E9181ECD43DB00526187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1866E9171ECD43DB00526187 /* Assets.xcassets */; };
 		1866E91B1ECD43DB00526187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1866E9191ECD43DB00526187 /* LaunchScreen.storyboard */; };
 		1866E9231ECD4B6B00526187 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9221ECD4B6B00526187 /* PostCell.swift */; };
 		1866E9251ECD4D9300526187 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9241ECD4D9300526187 /* PostItem.swift */; };
 		1866E9271ECDF47700526187 /* SouthernFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9261ECDF47700526187 /* SouthernFoodViewController.swift */; };
 		1866E9291ECE509B00526187 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9281ECE509B00526187 /* CheckOutViewController.swift */; };
 		1866E92B1ECE9E9D00526187 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92A1ECE9E9D00526187 /* AddressViewController.swift */; };
+		1866E92D1ECED3C400526187 /* SearchFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,6 @@
 		1866E9101ECD43DB00526187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1866E9121ECD43DB00526187 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		1866E9151ECD43DB00526187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1866E9171ECD43DB00526187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1866E91A1ECD43DB00526187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1866E91C1ECD43DB00526187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1866E9221ECD4B6B00526187 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		1866E9261ECDF47700526187 /* SouthernFoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SouthernFoodViewController.swift; sourceTree = "<group>"; };
 		1866E9281ECE509B00526187 /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		1866E92A1ECE9E9D00526187 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,6 @@
 				1866E9101ECD43DB00526187 /* AppDelegate.swift */,
 				1866E9121ECD43DB00526187 /* PostViewController.swift */,
 				1866E9141ECD43DB00526187 /* Main.storyboard */,
-				1866E9171ECD43DB00526187 /* Assets.xcassets */,
 				1866E9191ECD43DB00526187 /* LaunchScreen.storyboard */,
 				1866E91C1ECD43DB00526187 /* Info.plist */,
 				1866E9221ECD4B6B00526187 /* PostCell.swift */,
@@ -75,6 +74,7 @@
 				1866E9261ECDF47700526187 /* SouthernFoodViewController.swift */,
 				1866E9281ECE509B00526187 /* CheckOutViewController.swift */,
 				1866E92A1ECE9E9D00526187 /* AddressViewController.swift */,
+				1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */,
 			);
 			path = CaterMe;
 			sourceTree = "<group>";
@@ -140,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1866E91B1ECD43DB00526187 /* LaunchScreen.storyboard in Resources */,
-				1866E9181ECD43DB00526187 /* Assets.xcassets in Resources */,
 				1866E9161ECD43DB00526187 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +155,7 @@
 				1866E9131ECD43DB00526187 /* PostViewController.swift in Sources */,
 				1866E9111ECD43DB00526187 /* AppDelegate.swift in Sources */,
 				1866E9251ECD4D9300526187 /* PostItem.swift in Sources */,
+				1866E92D1ECED3C400526187 /* SearchFilterViewController.swift in Sources */,
 				1866E9271ECDF47700526187 /* SouthernFoodViewController.swift in Sources */,
 				1866E92B1ECE9E9D00526187 /* AddressViewController.swift in Sources */,
 				1866E9231ECD4B6B00526187 /* PostCell.swift in Sources */,
