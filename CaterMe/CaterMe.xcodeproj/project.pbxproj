@@ -18,6 +18,7 @@
 		1866E92B1ECE9E9D00526187 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92A1ECE9E9D00526187 /* AddressViewController.swift */; };
 		1866E92D1ECED3C400526187 /* SearchFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */; };
 		1866E92F1ECEF20C00526187 /* FilteredPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */; };
+		1872EAB11ECF02280000C517 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872EAB01ECF02270000C517 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1866E92A1ECE9E9D00526187 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFilterViewController.swift; sourceTree = "<group>"; };
 		1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredPostViewController.swift; sourceTree = "<group>"; };
+		1872EAB01ECF02270000C517 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				1866E92A1ECE9E9D00526187 /* AddressViewController.swift */,
 				1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */,
 				1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */,
+				1872EAB01ECF02270000C517 /* MapViewController.swift */,
 			);
 			path = CaterMe;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				1866E9291ECE509B00526187 /* CheckOutViewController.swift in Sources */,
 				1866E9131ECD43DB00526187 /* PostViewController.swift in Sources */,
 				1866E9111ECD43DB00526187 /* AppDelegate.swift in Sources */,
+				1872EAB11ECF02280000C517 /* MapViewController.swift in Sources */,
 				1866E92F1ECEF20C00526187 /* FilteredPostViewController.swift in Sources */,
 				1866E9251ECD4D9300526187 /* PostItem.swift in Sources */,
 				1866E92D1ECED3C400526187 /* SearchFilterViewController.swift in Sources */,
@@ -326,6 +330,7 @@
 				1866E9211ECD43DB00526187 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
