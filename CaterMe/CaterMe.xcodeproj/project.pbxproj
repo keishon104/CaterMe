@@ -17,6 +17,7 @@
 		1866E9291ECE509B00526187 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E9281ECE509B00526187 /* CheckOutViewController.swift */; };
 		1866E92B1ECE9E9D00526187 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92A1ECE9E9D00526187 /* AddressViewController.swift */; };
 		1866E92D1ECED3C400526187 /* SearchFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */; };
+		1866E92F1ECEF20C00526187 /* FilteredPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1866E9281ECE509B00526187 /* CheckOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		1866E92A1ECE9E9D00526187 /* AddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFilterViewController.swift; sourceTree = "<group>"; };
+		1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				1866E9281ECE509B00526187 /* CheckOutViewController.swift */,
 				1866E92A1ECE9E9D00526187 /* AddressViewController.swift */,
 				1866E92C1ECED3C400526187 /* SearchFilterViewController.swift */,
+				1866E92E1ECEF20C00526187 /* FilteredPostViewController.swift */,
 			);
 			path = CaterMe;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				1866E9291ECE509B00526187 /* CheckOutViewController.swift in Sources */,
 				1866E9131ECD43DB00526187 /* PostViewController.swift in Sources */,
 				1866E9111ECD43DB00526187 /* AppDelegate.swift in Sources */,
+				1866E92F1ECEF20C00526187 /* FilteredPostViewController.swift in Sources */,
 				1866E9251ECD4D9300526187 /* PostItem.swift in Sources */,
 				1866E92D1ECED3C400526187 /* SearchFilterViewController.swift in Sources */,
 				1866E9271ECDF47700526187 /* SouthernFoodViewController.swift in Sources */,
