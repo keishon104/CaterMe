@@ -10,6 +10,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="7z8-eh-i9V">
+            <objects>
+                <viewController id="2qN-k5-mPV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JvX-zV-VP2"/>
+                        <viewControllerLayoutGuide type="bottom" id="i3q-cr-hLp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iba-Rc-27G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmj-PT-xje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="-604"/>
+        </scene>
         <!--Post View Controller-->
         <scene sceneID="uqF-dd-I3p">
             <objects>
@@ -64,7 +82,13 @@
                             <outlet property="delegate" destination="f8D-af-Vbu" id="rYW-16-ypV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="sFb-o8-U4C"/>
+                    <navigationItem key="navigationItem" id="sFb-o8-U4C">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="mQ2-bJ-RKO">
+                            <connections>
+                                <segue destination="2qN-k5-mPV" kind="show" id="g2r-Dp-pu8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xh-Kh-csC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -314,7 +338,19 @@
                     <view key="view" contentMode="scaleToFill" id="vQc-Sn-bGx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your order  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vof-hd-eAv">
+                                <rect key="frame" x="88" y="186" width="198" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vof-hd-eAv" firstAttribute="centerX" secondItem="vQc-Sn-bGx" secondAttribute="centerX" id="2t0-C9-kdv"/>
+                            <constraint firstItem="Vof-hd-eAv" firstAttribute="top" secondItem="zVx-5S-8Ol" secondAttribute="bottom" constant="122" id="bsp-zs-L9g"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5J-pl-lu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
