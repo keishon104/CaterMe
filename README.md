@@ -1,15 +1,12 @@
 # CaterMe
 
 #### Project Description
-
+CaterMe is a app that allows individuals to find catering services on short notice.
 
 The technologies I used in this project were:  
   - Swift
   - Cocoabeans
-  -
-
-## Usage
-
+  
 
 ## Contributing
 
@@ -21,7 +18,7 @@ The technologies I used in this project were:
 
 
 ## Credits
-Code developed by Keishon Smith hgc
+Code developed by Keishon Smith 
 
 
 
